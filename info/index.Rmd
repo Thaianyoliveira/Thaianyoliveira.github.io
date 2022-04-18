@@ -1,0 +1,13 @@
+---
+title: "Thaiany Mara Mapa Oliveira"
+image: "foto.jpg"
+links:
+  - label: GitHub
+    url: "https://thaianyoliveira.github.io/"
+  - label: LinkedIn
+    url: "www.linkedin.com/in/thaiany-oliveira"
+output:
+  postcards::jolla
+---
+ 
+Descrição sobre o aluno(a)!
