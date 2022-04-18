@@ -1,6 +1,6 @@
 ---
 title: "Relatórios da Disciplina de Estatística Computacional"
-author: "Ben Dêivide"
+author: "Thaiany Oliveira"
 date: "`r format(Sys.time(), '%d %B, %Y, %Hh:%Mmin:%Sseg')`"
 header-includes:
   - \usepackage{titling}
