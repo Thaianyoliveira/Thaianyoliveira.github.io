@@ -10,4 +10,4 @@ output:
   postcards::jolla
 ---
  
-Descrição sobre o aluno(a)!
+Engenheira em formação, pela Universidade de São João Del Rei.
