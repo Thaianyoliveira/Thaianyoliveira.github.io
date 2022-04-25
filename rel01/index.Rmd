@@ -183,7 +183,7 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  
  ![](pacotes.png)
 
- Nesta janela é possível pesquisar os pacotes para serem instalados. Os principais indicados são: knitr e tinytex.
+ Nesta janela é possível pesquisar os pacotes para serem instalados. Os principais indicados são: rmarkdown, knitr, postcards e tinytex.
  
 ### Como usar
 
@@ -203,4 +203,4 @@ require()
  
  ---
  
-  Para mais detalhes, acesse [Programação em R (Nível Básico)](https://bendeivide.github.io/cursor/nbasico.html).
+  Para mais detalhes sobre os pontos discutidos, acesse [Programação em R (Nível Básico)](https://bendeivide.github.io/cursor/nbasico.html).
