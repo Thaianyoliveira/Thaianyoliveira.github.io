@@ -54,7 +54,7 @@ knitr::opts_chunk$set(echo = TRUE)
  A seguinte aba será aberta:
  
  <center>
- ![](repositorio.png){width="50%"}
+ ![](repositorio.png){width="70%"}
  </center>
 
  Nela é interessante nomear o repertório com seu nome de proprietário e acrescentar `github.io` para facilitar na utilização do link futuramente gerado. Antes de concluir a criação, certifique-se que a caixa `Público` e `Adicionar um arquivo README` estejam marcadas.
@@ -74,7 +74,7 @@ knitr::opts_chunk$set(echo = TRUE)
   > File > New Project > Version Control > Git > o próximo passo está na imagem abaixo
 
  <center>
- ![](projeto.png){width="50%"}
+ ![](projeto.png){width="70%"}
  </center>
 
  Nesta aba, insira o link copiado do passo anterior, insira o nome igual ao repositório criado no GitHub e escolha a pasta dentro da sua máquina.
@@ -90,7 +90,7 @@ Para sua criação é necessário seguir os passos abaixo:
  > File > New File > R Markdown... > `New R Markdown`
  
  <center>
- ![](rmarkdown.png){width="50%"}
+ ![](rmarkdown.png){width="70%"}
  </center>
  
  Nesta nova janela, nomeie o arquivo de `index` para conseguir abri-lô como página diretamente pelo GitHub.
@@ -131,12 +131,12 @@ $ git push
 Assim, como outros programas textuais, há maneiras de se diferenciar letras, títulos e pontuações. No R Markdown funciona da seguinte maneira:
 
 - Escrita em:
-  - Itálico: ([_Itálico_]) _Itálico_;
-  - Negrito: ([**negrito**]) **negrito**;
+  - Itálico: `(_Itálico_)` _Itálico_;
+  - Negrito: `(**negrito**)` **negrito**;
  
 - Vínculos:
-  - Link: `[]()`
-  - Imagens: `![]()`
+  - Link: `[nome_do_link](link)`[link](https://thaianyoliveira.github.io/)
+  - Imagens: `![](nome_da_imagem)`
   
 - Pontuações:
   - Título: `#`
@@ -146,4 +146,4 @@ Assim, como outros programas textuais, há maneiras de se diferenciar letras, t�
 
  ---
  
-  Para mais detalhes sobre os pontos discutidos, acesse [Programação em R (Nível Básico)](https://bendeivide.github.io/cursor/nbasico.html).
+  Para mais detalhes sobre os pontos discutidos, acesse [Programação em R (Nível Básico)](https://bendeivide.github.io/slides/estcomp/s06/).
