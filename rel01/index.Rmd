@@ -63,18 +63,23 @@ Descrever as ideias básicas sobre o ambiente R:
 
 - Interface do R:
 
-![](interface.r.png){width="75%"}
+<center>
+![](interface.r.png){width="50%"}
+</center>
 
 - Interface do RStudio:
 
-![](interface.rstudio.png){width="75%"}
+<center>
+![](interface.rstudio.png){width="50%"}
+</center>
 
 ## Como o R trabalha
 
 A imagem a seguir apresenta esquematicamente como o R trabalha:
 
-
-![](esquema.png)
+<center>
+![](esquema.png){width="70%"}
+</center>
 
  Assim,
  
@@ -91,14 +96,10 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  
   Exemplo:
  
-```Gitbub
+```{r echo=TRUE}
  # Para fazer uma soma de dois elementos
  
  4 + 6
- 
- # O R retorna
- 
- [1] 10
 ```
 
 - Atribuições:
@@ -107,7 +108,7 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  
  Exemplo:
  
-```Gitbub
+```{r echo=TRUE}
  #Para criar um vínculo entre uma letra e um número, insere o seguinte comando
  
  x <- 4
@@ -127,7 +128,7 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  
 - Criação de um vetor:
  
- ```Github
+ ```{r echo=TRUE}
  nome_vetor <- c()
  ```
  
@@ -135,24 +136,35 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  
  Retorna qual é o tipo de vetor, como por exemplo: "double" ou "character".
 
- ```Github
- typeof(nome_vetor)
- ```
+```{r echo=TRUE}
+#criando o vetor
+
+nome_vetor <- c(1, 4, 6)
+
+#para saber qual o tipo de vetor
+
+typeof(nome_vetor)
+```
  
 - Operações:
  
  As operações apresentadas nas expressões do tópico anterior, também podem ser utilizadas com vetores, sendo realizadas com cada elemento do vetor. Exemplo:
  
- ```Github
- c1(1, 2, 3) + c2(4, 5, 6)
+ ```{r echo=TRUE}
+ c1 <- c(1, 2, 3)
  
- [1] 5 7 9
- ```
+ c2 <- c(4, 5, 6)
+ 
+ c1 + c2
+```
+
 - Operadores lógicos:
  
  Dão um retorno de "sim ou não", no modo operacional, retorna TRUE/FALSE, de acordo com a pergunta feita. A tabela abaixo apresenta a sintaxe e a pergunta correspondente.
  
+ <center>
  ![](tabela.png)
+ </center>
 
 ## Importação de dados
 
@@ -181,7 +193,9 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
  Para instalar os pacotes que não são instalados junto do R, vá em "packages" no quarto quadrante do RStudio e vá em "Install".
  Em seguida, será aberto a tela apresentada na imagem abaixo.
  
+ <center>
  ![](pacotes.png)
+ </center>
 
  Nesta janela é possível pesquisar os pacotes para serem instalados. Os principais indicados são: rmarkdown, knitr, postcards e tinytex.
  
@@ -189,7 +203,7 @@ A imagem a seguir apresenta esquematicamente como o R trabalha:
 
  Uma vez instalado o pacote, precisamos carregar e anexá-lo, para que possamos utilizar os recursos disponíveis no pacote, como funções, dados, etc. Isso significa, disponibilizar na memória e inseri-lo no caminho de busca, respectivamente. 
  
-```Github
+```{r}
 #Para fazer essas duas ações ao mesmo tempo use a função
 
 library()
