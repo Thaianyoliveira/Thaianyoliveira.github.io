@@ -131,9 +131,6 @@ knitr :: include_graphics( "distr.poisson.png" )
 
 ## Aplicações
 
-<div text: "justify">
-
  Para profissionais da engenharia civil ela proporciona previsões úteis sobre a demanda e distribuição de eventos na área de planejamento e controle de produção.
  A estatística e probabilidade possui relevância nos segmentos de prevenção de catástrofes e impactos ambientais, resistência dos materiais, controle de qualidade e um melhor aperfeiçoamento nos projetos onde o Engenheiro tem que dominar com exatidão a ampla grade de ferramentas para se destacar no mercado.
 
-</div>
