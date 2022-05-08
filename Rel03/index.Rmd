@@ -30,16 +30,19 @@ Uma distribuição de probabilidade é um modelo matemático que relaciona um ce
 - Exemplos práticos:
 
   - Qual a probabilidade de se jogar uma moeda duas vezes para o alto e cair Coroa nas duas vezes;
+  
   - Qual o valor da corrente elétrica passada no fio durante uma hora.
 
 # Variáveis aleatórias 
 
 - Discretas
+
 - Contínuas
 
 ## Discretas
 
 - Os valores estão contidos no conjunto dos números Naturais;
+
 - Exemplos práticos:
   - Número de jogos  ganhos;
   - Número de defeitos em peças de uma fábrica;
