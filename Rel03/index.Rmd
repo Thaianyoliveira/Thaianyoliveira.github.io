@@ -52,8 +52,11 @@ Uma distribuição de probabilidade é um modelo matemático que relaciona um ce
 
 - Os valores estão contidos no conjunto dos números Reais;
 - Exemplos práticos:
+
   - Alturas de um grupo;
+  
   - Pesos de fruta;
+  
   - Corrente elétrica em um cabo elétrico.
   
 # Tipos de distribuições de probabilidade
