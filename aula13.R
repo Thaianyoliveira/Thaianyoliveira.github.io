@@ -1,44 +1,11 @@
----
-title: "Relatório 04"
-author: "Ben Dêivide"
-date: "12/05/2022"
-header-includes:
-  - \usepackage{titling}
-  - \pretitle{\begin{center}
-    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
-  - \posttitle{\end{center}}
-toc-title: "Sumário"
-output:
-  
-  html_document:
-    theme: journal
-    highlight: tango
-    toc: yes
-    number_sections: yes
-    includes:
-      in_header: logo.html
-  pdf_document:
-    
-    toc: yes
-    number_sections: yes
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
---- 
-
-# Objetivo
-
-Descrever o objetivo do relatório!
-
-# Apresentação do relatório
-
-Aqui será o local para apresentar o material sobre o relatório.
-```
+# Universidade Federal de São João del-Rei
+# Departamento de Estatística, Física e Matemática (DEFIM)
+# Disciplina de Estatística Computacional
+# Prof. Ben Dêivide (http://bendeivide.github.io)
+# Aula 13: Geradores aleatórios e Aproximação de distribuições
+#---------------------------------------------------
 
 
-```{r setup, include=FALSE}
 # Gerando numeros aleatorios de uma distribuicao exponencial
 
 rexponencial <- function(n, lambda) {
@@ -70,7 +37,3 @@ sum(x$weights * fx2(x$nodes))
 
 # Para fx3 temos
 1.5 * sum(x$weights * fx3(x$nodes))
-
-```
-
-

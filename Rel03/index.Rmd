@@ -131,8 +131,11 @@ knitr :: include_graphics( "distr.poisson.png" )
  Para utilização da função, se coloca a letra de indicação junto com a abreviação do tipo de distribuição já citada.
  
 - `d` calcula a densidade de probabilidade f(x)no ponto x;
+
 - `p` calcula a função de probabilidade acumulada F(x)no ponto x;
+
 - `q` calcula o quantil correspondente a uma dada probabilidade;
+
 - `r` retira uma amostra aleatória da distribuição.
 
 ## Aplicações
