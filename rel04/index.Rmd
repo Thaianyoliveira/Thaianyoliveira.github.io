@@ -1,6 +1,6 @@
 ---
-title: "Relatório 04"
-author: "Ben Dêivide"
+title: "Relatório 04 - Aproximações de Distribuições"
+author: "Thaiany Oliveira"
 date: "12/05/2022"
 header-includes:
   - \usepackage{titling}
@@ -30,47 +30,50 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Objetivo
 
-Descrever o objetivo do relatório!
+O presente relatório tem como objetivo apresentar sobre as aproximações de distribuição, em específico sobre a Quadratura Gaussiana.
 
 # Apresentação do relatório
 
-Aqui será o local para apresentar o material sobre o relatório.
-```
+A seguir será apresentado os tópicos referentes ao objetivo do relatório.
 
+# Exemplificação
 
-```{r setup, include=FALSE}
-# Gerando numeros aleatorios de uma distribuicao exponencial
+ A equação abaixo pode ser resolvida de várias maneiras. A seguir será apresntado três formas de resolução.
 
-rexponencial <- function(n, lambda) {
-  if (!is.numeric(lambda) | lambda < 0) 
-    stop("O argumento lambda deve ser numérico e maior que 0!", call. = FALSE)
-  nunif <- runif(n)
-  x <- (-log(1 - nunif)) / lambda
-  return(x)
-}
+$$ \int_{1}^{2} (1/x)dx $$
+## Resolução usual:
+ Neste caso é o mais manual, onde é feito a resolução da integral dentro dos limites, ficando:
 
+$$ \int_{1}^{2} (1/x)dx = [ln(x)]_{1}^{2} = ln(2) - ln(1) = 0,6931472 $$
+## Quadratura Gauss-Legendre
 
-# Verificando graficamente
-plot(sort(rexponencial(1000, lambda = 1)))
-points(sort(rexp(1000, rate = 1)), col = "red")
+ Na resolução pela Quadratura Gauss-Legendre, também conhecida como Quadratura Gaussiana, sua equação pode ser simplificada como:
 
+$$ \int_{a}^{b} g(x)dx \approx \sum_{k = 1}^s w_k f(x_k) $$
 
+ Onde:
 
-# Aproximacao de distribuicoes
-(x <- SMR:::GaussLegendre(2))
-fx <- function(x) x^3 - 5 * x
-fx2 <- function(x) x^2
-fx3 <- function(x) (1.5 * x + 1.5)^2 # para x^3 [0, 2]
+- $a$$b$ é o intevalo da integral;
 
-# O resultado fica assim
-sum(x$weights * fx(x$nodes))
+- $g(x)$ é uma função em questão;
 
-# Para fx2 temos
-sum(x$weights * fx2(x$nodes))
+- $s$ é o número de pontos da quadratutra;
 
-# Para fx3 temos
-1.5 * sum(x$weights * fx3(x$nodes))
+- $w_k$ é o peso da soma;
 
-```
+- $f(x_k)$ é a função em questão transformada.
 
+ Após a transformação de $g(x)$  em $f(x_k)$, a Quadratura nos permite trocar os limites, nesse caso, vamos variar de $-1$ a $1$. A equação ficará assim:
+ 
+ $$ \int_{a}^{b} f(x)dx = \int_{-1}^{1} f[(b - a)/2) t + (b - a)/2)] dt $$
+ Para finalmente chegar em:
+ 
+ $$ \int_{1}^{2} f(x)dx \approx 0.5 \sum_{i = 1}^n w_k f(0.5t_k + 1.5) $$
+ 
+## Cálculo pelo R
 
+ Para o cálculo da integral pelo R é necessáro determinar $s$, $w_k$ e $f(x_k)$, da Quadratura Genssiana, através do pacote SMR instalado no pacote R.
+
+---
+
+Para mais informações a respeito, leia a [Dissertação do Prof. da Disciplina, Ben Deivide](https://bendeivide.github.io/media/dis_ben.pdf)
