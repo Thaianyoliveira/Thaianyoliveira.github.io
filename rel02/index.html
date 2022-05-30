@@ -380,8 +380,9 @@ Repositório</a>
 Relatório</a>
 <ul>
 <li><a href="#criação-do-relatório"><span class="toc-section-number">4.1</span> Criação do Relatório</a></li>
-<li><a href="#envio-para-o-github"><span class="toc-section-number">4.2</span> Envio para o GitHub</a></li>
-<li><a href="#acesso-ao-relatório-online"><span class="toc-section-number">4.3</span> Acesso ao relatório
+<li><a href="#relatório-base"><span class="toc-section-number">4.2</span> Relatório base</a></li>
+<li><a href="#envio-para-o-github"><span class="toc-section-number">4.3</span> Envio para o GitHub</a></li>
+<li><a href="#acesso-ao-relatório-online"><span class="toc-section-number">4.4</span> Acesso ao relatório
 online</a></li>
 </ul></li>
 <li><a href="#funcionalidades"><span class="toc-section-number">5</span>
@@ -489,10 +490,27 @@ Relatório</h2>
 conseguir abri-lô como página diretamente pelo GitHub. Em
 <code>Default Output Format</code> permite escolher os formatos de saída
 do texto, podendo gerar um <code>HTML</code>, <code>PDF</code> ou
-<code>Word</code>.</p>
+<code>Word</code>. Assim, o arquivo em <code>Rmd</code> será aberto na
+aba superior a esquerda do RStudio e está pronta para entrar em uso.</p>
 </div>
-<div id="envio-para-o-github" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Envio para o
+<div id="relatório-base" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Relatório base</h2>
+<p>Acriação de um relátorio base irá proporcionar a funcionalidade de
+unir todos os outros relatórios em uma única página na internet. Para
+isso, basta usar a estrutura de anexar link a um texto e os relatórios
+sejam todos salvos como <code>index</code>, porém em pastas
+diferentes.</p>
+<p>Exemplo:</p>
+<blockquote>
+<ul>
+<li><code>[Relatório xx (--/--/----)](relxx/index.html){target=&quot;_blank&quot;}</code></li>
+</ul>
+</blockquote>
+<p>Onde <code>x</code> é o número do relatório no título e
+<code>relxx`` é o nome da pasta onde o</code>Rmd` foi salvo.</p>
+</div>
+<div id="envio-para-o-github" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Envio para o
 GitHub</h2>
 <p>Após escrever o relatório, é necessário clicar em <code>Knit</code>,
 na opção <code>to HTML</code>. Este passo irá mostrar como ficará a
@@ -512,8 +530,8 @@ $ git commit -m &quot;comentário&quot;
 $ git push
 </code></pre>
 </div>
-<div id="acesso-ao-relatório-online" class="section level2" number="4.3">
-<h2><span class="header-section-number">4.3</span> Acesso ao relatório
+<div id="acesso-ao-relatório-online" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Acesso ao relatório
 online</h2>
 <p>Dentro do GitHub, após ter enviado o relatório seguindo um dos passos
 anteriores, no repositório clonado, vá em:</p>

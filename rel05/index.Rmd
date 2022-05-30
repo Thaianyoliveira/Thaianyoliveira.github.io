@@ -1,7 +1,7 @@
 ---
-title: "Relatório 02"
-author: "Ben Dêivide"
-date: "12/04/2022"
+title: "Relatório 05 - Desenvolvimento de Funções para o Leem"
+author: "Thaiany Oliveira"
+date: "19/05/2022"
 header-includes:
   - \usepackage{titling}
   - \pretitle{\begin{center}
@@ -30,9 +30,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Objetivo
 
-Descrever o objetivo do relatório!
+O presente relatório tem como função desenvolver melhorias para o Leem.
 
 # Apresentação do relatório
 
-Aqui será o local para apresentar o material sobre o relatório.
+A seguir será apresentado o tema foco para o desenvolvimento da função.
+
+# Amplitude de uma amostra
+
+A amplitude de um conjunto, em Estatística, é a diferença entre o maior elemento desse conjunto e o menor. Em outras palavras, para encontrar a amplitude de uma lista de números, basta subtrair o menor elemento do maior.
+
+Foi feito a função de amplitude a respeito de uma amostra. O seu desenolvimento pode ser encontrado nos arquivos upados no [GitHub](https://github.com/Thaianyoliveira/Thaianyoliveira.github.io/tree/main/rel05).
 

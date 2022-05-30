@@ -95,6 +95,17 @@ Para sua criação é necessário seguir os passos abaixo:
  
  Nesta nova janela, nomeie o arquivo de `index` para conseguir abri-lô como página diretamente pelo GitHub.
  Em `Default Output Format` permite escolher os formatos de saída do texto, podendo gerar um `HTML`, `PDF` ou `Word`.
+ Assim, o arquivo em `Rmd` será aberto na aba superior a esquerda do RStudio e  está pronta para entrar em uso.
+ 
+## Relatório base
+ Acriação de um relátorio base irá proporcionar a funcionalidade de unir todos os outros relatórios em uma única página na internet.
+ Para isso, basta usar a estrutura de anexar link a um texto e os relatórios sejam todos salvos como `index`, porém em pastas diferentes.
+ 
+ Exemplo:
+ 
+ > - `[Relatório xx (--/--/----)](relxx/index.html){target="_blank"}`
+ 
+ Onde `x` é o número do relatório no título e `relxx`` é o nome da pasta onde o `Rmd` foi salvo.
  
 ## Envio para o GitHub
 
